@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Fri Jul 29 2016 17:25:56 GMT+0000 (UTC) -->
+<html data-wf-page="579b8db963bce7eb482dc615" data-wf-site="57753552a8dfa30f21647f3f">
+<head>
+  <meta charset="utf-8">
+  <title>Bozduganov2</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/bozduganov2.webflow.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script type="text/javascript">
+    WebFont.load({
+      google: {
+        families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic","Source Sans Pro:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,900,900italic","Karla:regular,italic,700,700italic:latin,latin-ext","Work Sans:100,200,300,regular,500,600,700,800,900:latin,latin-ext"]
+      }
+    });
+  </script>
+
+  <script src="js/modernizr.js" type="text/javascript"></script>
+  <link href="https://daks2k3a4ib2z.cloudfront.net/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png" rel="apple-touch-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet">
+</head>
+<body>
+  <div class="navmenu" data-ix="slide-nab-bar-out">
+    <div class="cta-wrapper"><a class="outlinedbutton w-button" data-ix="new-interaction" href="#">Go to shop</a>
+    </div>
+    <div class="navmenu-flex" data-ix="slide-nab-bar-out"><a class="navlink navlinkmenu" href="#">Text Link</a><a class="navlink navlinkmenu" href="#">Text Link</a><a class="navlink navlinkmenu" href="#">Text Link</a>
+      <div class="closemenu"><img src="images/white-close.png">
+      </div>
+    </div>
+  </div>
+ <div id="fullPage">
+    <section class="vertical-scrolling fp-section fp-table" data-anchor="firstSection">
+        <h2>fullPage.js</h2>
+        <h3>This is the first section</h3>
+        <div class="scroll-icon">
+            <p>Jump into the last slide</p>
+            <a href="#fifthSection/1" class="icon-up-open-big"></a>
+        </div>
+    </section>
+    <section class="section vertical-scrolling fp-section fp-table" data-anchor="secondSection">
+        <div class="item-wrap">
+          <h1 class="h1">Když vezmete <br>Diskette do rukou...</h1>
+          <p class="subhead">pocítite:
+            <br>lehkost, tenkost,
+            <br>pevnost</p><a class="button w-button" href="#">Button Text</a>
+        </div>
+    </section>
+    <section class="section vertical-scrolling fp-section fp-table">
+        <div class="item-wrap">
+      <h1 class="h1 h1-colour">Když vezmete <br>Diskette do rukou...</h1>
+      <p class="subhead subhead-light">pocítite:
+        <br>lehkost, tenkost,
+        <br>pevnost</p><a class="button w-button" href="#">Button Text</a>
+        </div>
+    </section>
+    <section class="section vertical-scrolling fp-section fp-table">
+        <!-- content here -->
+    </section>  
+    <section class="section vertical-scrolling fp-section fp-table">
+           <div class="item-wrap">
+          <h1 class="h1 h1-light">Když vezmete <br>Diskette do rukou...</h1>
+          <p class="subhead subhead-light">pocítite:
+            <br>lehkost, tenkost,
+            <br>pevnost</p><a class="button w-button" href="#">Button Text</a>
+        </div>
+    </section> 
+</div>
+    
+    
+    
+    
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
+    <script>
+    $('#fullPage').fullpage({
+        sectionSelector: '.vertical-scrolling',
+       
+        controlArrows: true,
+        anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection']
+        
+    });
+  </script>
+    <script>
+        afterLoad: function(anchorLink, index) {
+    if (index == 5) {
+        $('#fp-nav').hide();
+    }
+}
+ 
+onLeave: function(index, nextIndex, direction) {
+    if(index == 5) {
+        $('#fp-nav').show();
+    }
+}
+        
+        
+    </script>
+<div id="fp-nav" class="right" style="margin-top: -53.5px;"><ul><li><a href="#firstSection" class="active"><span></span></a></li><li><a href="#secondSection" class=""><span></span></a></li><li><a href="#thirdSection"><span></span></a></li><li><a href="#fourthSection"><span></span></a></li><li><a href="#fifthSection"><span></span></a></li></ul></div>
+</body>
+</html>
